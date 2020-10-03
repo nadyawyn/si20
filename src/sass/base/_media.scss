@@ -1,0 +1,115 @@
+@media (min-width: $tablet-width_s) {
+	.set {
+		&__list {
+
+			&-item {
+
+				margin-right: 15px;
+
+
+			}
+		}
+	}
+}
+
+@media (min-width: $laptop-width) {
+	.wrapper {
+		flex-flow: row nowrap;
+	}
+
+	.container {
+		width: $container-width;
+	}
+
+	.main {
+		width: $container-width;
+		margin: 0 auto;
+	}
+
+	.header {
+		&__tab {
+			height: 50px;
+		}
+
+		&__progress {
+			&-container {
+				width: $container-width;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.ad {
+		&__title {
+			&_cal {
+				margin-top: 0;
+			}
+		}
+
+		&__list {
+
+			&-item {
+
+				&.time {
+					margin-right: 15px;
+					flex-basis: 100px;
+					flex-shrink: 0;
+
+				}
+
+				&.grams {
+					margin-right: 15px;
+					width: 80px;
+				}
+
+				&.hint {
+					flex-basis: 100%;
+					//padding: 10px;
+					flex-shrink: 0;
+					//color: $color_grey;
+
+					//font-style: italic;
+				}
+
+				&.meal {
+					flex-basis: 300px;
+					flex-shrink: 1;
+					margin-right: 15px;
+				}
+
+			}
+		}
+
+		&__data {
+			float: 100%;
+			flex-grow: 1;
+			padding-right: 15px;
+			height: 500px;
+		}
+
+		&__base {
+			&-list {
+				height: 500px;
+
+			}
+		}
+
+		&__result {
+			flex-basis: 200px;
+		}
+
+	}
+
+	.set {
+		&__list {
+			&-item {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.login {
+		width: 500px;
+		margin: 70px auto;
+	}
+}

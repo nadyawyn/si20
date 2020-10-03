@@ -1,0 +1,60 @@
+@import "libs/normalize";
+@import "libs/fonts";
+
+@import "base/variables";
+@import "base/mixins";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+
+	padding: 0;
+
+	&_pad {
+		padding: 0 15px;
+	}
+
+	&_padh {
+		padding: 15px;
+	}
+
+	&_flex {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/* Classes responsible for showing / hiding content */
+.hide {
+	display: none;
+}
+
+.show {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/ad";
+@import "blocks/set";
+@import "blocks/_login";
+
+@import "blocks/buttons";
+
+@import "base/media";

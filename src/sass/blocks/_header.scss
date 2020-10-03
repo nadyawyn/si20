@@ -1,0 +1,205 @@
+.header {
+
+
+	&__title {
+		margin: 0;
+		font-size: 2em;
+
+		a {
+			display: block;
+			height: 100%;
+			padding: 10px 0;
+			color: $color_grey;
+			text-decoration: none;
+
+			span {
+				font-size: 0.6em;
+			}
+		}
+	}
+
+	&__progress {
+		width: 100%;
+		height: 30px;
+		display: flex;
+
+		&-container {
+			width: 100%;
+		}
+
+		&-fill {
+			padding-top: 5px;
+			text-align: center;
+			color: #fff;
+
+			bottom: 0;
+			left: 0;
+			display: block;
+			height: 100%;
+			width: 120px;
+			background-color: #bbb;
+		}
+	}
+
+	&__tabs {
+		margin-top: 10px;
+		width: 100%;
+		display: flex;
+
+		flex-flow: row wrap;
+	}
+
+	&__tab {
+		cursor: pointer;
+		text-transform: uppercase;
+		height: 65px;
+		flex-basis: 30%;
+		flex-grow: 1;
+		flex-shrink: 1;
+
+		background-color: #bbb;
+
+		color: #fff;
+		font-size: 1.4em;
+
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&_dt {
+			background-color: $color_dt;
+
+			&:hover {
+				background-color: $color_dt_l;
+			}
+		}
+
+		&_ht {
+			background-color: $color_ht;
+
+			&:hover {
+				background-color: $color_ht_l;
+			}
+		}
+
+		&_dj {
+			background-color: $color_dj;
+
+			&:hover {
+				background-color: $color_dj_l;
+			}
+		}
+
+		&_ad {
+			background-color: $color_ad;
+
+			&:hover {
+				background-color: $color_ad_l;
+			}
+		}
+
+		&_ft {
+			background-color: $color_ft;
+
+			&:hover {
+				background-color: $color_ft_l;
+			}
+		}
+
+		&_el {
+			background-color: $color_el;
+
+			&:hover {
+				background-color: $color_el_l;
+			}
+		}
+
+		&_home {
+			background-color: $color_home;
+
+			a {
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding: 12px;
+
+
+			}
+
+			&:hover {
+				background-color: $color_home_l;
+			}
+		}
+
+		&_set {
+			cursor: default;
+			background-color: $color_second_tab;
+		}
+	}
+
+
+	&__icons {
+		display: flex;
+	}
+
+	&__icon {
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+
+		cursor: pointer;
+
+		display: block;
+		height: 40px;
+		width: 40px;
+		margin: 10px 0 0 5px;
+
+		&_settings {
+			background: url(../icons/header/cog.svg);
+			background-size: 90%;
+			background-position: 0 3px;
+			background-repeat: no-repeat;
+
+			&:hover {
+				background: url(../icons/header/cog1.svg);
+				background-size: 90%;
+				background-position: 0 3px;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&_report {
+			background: url(../icons/header/statbar.svg);
+			background-size: 95%;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+
+			&:hover {
+				background: url(../icons/header/statbar1.svg);
+				background-size: 95%;
+				background-position: 0 0;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&_rec {
+			background: url(../icons/header/bell.svg);
+			background-size: 85%;
+			background-position: 4px 6px;
+			background-repeat: no-repeat;
+
+			&:hover {
+				background: url(../icons/header/bell1.svg);
+				background-size: 85%;
+				background-position: 4px 6px;
+				background-repeat: no-repeat;
+			}
+		}
+
+	}
+}

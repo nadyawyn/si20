@@ -1,0 +1,163 @@
+.main {
+	&__title {
+		margin: 5px 0 10px 0;
+		color: $color_dgrey;
+		font-weight: 500;
+	}
+
+	&__section {
+		margin: 0;
+		background-color: #fff;
+	}
+
+	&_settings {
+		padding: 10px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+
+		background-color: #fff;
+
+		&-section {
+			flex-shrink: 1;
+			flex-grow: 1;
+			min-width: 200px;
+			margin: 10px;
+			padding: 10px 10px 25px 10px;
+			box-shadow: 0 0 20px rgb(206, 206, 206);
+
+			border-radius: 4px;
+
+			h2 {
+				color: $color_grey;
+				margin: 0 10px 15px 5px;
+
+				font-weight: 300;
+			}
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-flow: row wrap;
+
+			align-items: stretch;
+		}
+
+		&-gen-item {
+			cursor: pointer;
+			width: 70px;
+			height: 50px;
+			margin: 5px;
+
+			color: #fff;
+
+			text-transform: uppercase;
+
+			font-size: 1.6em;
+			padding: 3px 0 0 5px;
+
+			flex-grow: 1;
+
+			&_low {
+				height: 30px;
+				font-size: 1em;
+
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+
+					color: #fff;
+
+					text-decoration: none;
+				}
+			}
+
+			&.item-dt {
+				background-color: $color_dt;
+
+				&.inactive {
+					background-color: $color_dt_in;
+				}
+			}
+
+			&.item-ht {
+				background-color: $color_ht;
+
+				&.inactive {
+					background-color: $color_ht_in;
+				}
+			}
+
+			&.item-dj {
+				background-color: $color_dj;
+
+				&.inactive {
+					background-color: $color_dj_in;
+				}
+			}
+
+			&.item-ad {
+				background-color: $color_ad;
+
+				&.inactive {
+					background-color: $color_ad_in;
+				}
+			}
+
+			&.item-ft {
+				background-color: $color_ft;
+
+				&.inactive {
+					background-color: $color_ft_in;
+				}
+			}
+
+			&.item-el {
+				background-color: $color_el;
+
+				&.inactive {
+					background-color: $color_el_in;
+				}
+			}
+
+			&.item-rec,
+			&.item-prog {
+				background-color: $color_dgrey;
+
+				&.inactive {
+					background-color: $color_grey;
+				}
+			}
+
+
+		}
+	}
+
+	&_report {
+		&-section {
+
+			flex-grow: 1;
+			width: 100%;
+			margin: 15px 0;
+			padding: 20px 20px 35px 30px;
+			box-shadow: 0 0 20px rgb(206, 206, 206);
+
+			border-radius: 4px;
+
+			h2 {
+				color: $color_grey;
+				margin: 0 0 15px 0;
+
+				font-weight: 300;
+			}
+		}
+	}
+
+	&__greet {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+		background-color: #fff;
+	}
+}

@@ -1,0 +1,13 @@
+.button {
+	border-radius: 4px;
+	border: none;
+
+	&_em {
+		background-color: $color_ht;
+		color: #ffffff;
+
+		&:hover {
+			background-color: $color_ht_l;
+		}
+	}
+}

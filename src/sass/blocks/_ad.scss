@@ -1,0 +1,255 @@
+.ad {
+	&__title {
+		margin: 10px 0;
+		color: $color_grey;
+
+		&_cal {
+			margin-top: 20px;
+		}
+	}
+
+	&__water {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 10px;
+
+		&-item {
+			cursor: pointer;
+			height: 35px;
+			width: 35px;
+			margin: 3px;
+
+			background: url(../icons/header/mug_grey.svg) center (center/cover) no-repeat;
+
+			&:hover {
+				background: url(../icons/header/mug_act.svg) center (center/cover) no-repeat;
+			}
+
+			&.complete {
+				background: url(../icons/header/mug_act.svg) center (center/cover) no-repeat;
+			}
+		}
+	}
+
+	&__list {
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row wrap;
+
+		&-item {
+			height: 40px;
+			margin: 5px 0;
+
+			border: 1px solid $color_grey;
+
+			flex-shrink: 1;
+
+			&.time {
+				margin-right: 15px;
+				width: 100px;
+				flex-shrink: 0;
+			}
+
+			&.grams {
+				width: 80px;
+				flex-grow: 1;
+			}
+
+			&.calories {
+				width: 100px;
+				flex-shrink: 1;
+
+				border: none;
+				background-color: #ddd;
+			}
+
+			&.hint {
+				cursor: pointer;
+				flex-basis: 100%;
+				//padding: 10px;
+				flex-shrink: 0;
+				color: $color_grey;
+				height: auto;
+
+				line-height: 2.2em;
+				text-align: right;
+
+				border: none;
+
+				font-style: italic;
+
+				&.hint.hidden {
+					height: 0;
+					padding: 0;
+					margin: 0;
+				}
+			}
+
+			&.meal {
+				flex-basis: 100%;
+			}
+		}
+	}
+
+	&__result {
+		flex-basis: 100%;
+	}
+
+	&__data {
+		height: 320px;
+		overflow-y: scroll;
+	}
+
+	&__caloriemeter {
+		width: 100%;
+		border: 1px solid $color_grey;
+
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-end;
+
+
+		&-fill {
+			background-color: #eee;
+			text-align: center;
+
+			&.from0to25 {
+				background: rgb(41, 249, 182);
+				background: linear-gradient(127deg, rgba(41, 249, 182, 1) 6%, rgba(50, 195, 214, 1) 93%);
+			}
+
+			&.from25to50 {
+				background: rgb(41, 249, 98);
+				background: linear-gradient(127deg, rgba(41, 249, 98, 1) 6%, rgba(50, 214, 167, 1) 93%);
+			}
+
+			&.from50to75 {
+				background: rgb(249, 241, 41);
+				background: linear-gradient(127deg, rgba(249, 241, 41, 1) 6%, rgba(235, 142, 15, 1) 91%);
+			}
+
+			&.from75to100 {
+				background: rgb(235, 142, 15);
+				background: linear-gradient(127deg, rgba(235, 142, 15, 1) 21%, rgba(249, 41, 110, 1) 90%);
+			}
+
+			&.over100 {
+				background: rgb(219, 27, 52);
+				background: linear-gradient(127deg, rgba(219, 27, 52, 1) 35%, rgba(255, 0, 0, 1) 75%);
+			}
+
+		}
+
+		&-value {
+			padding-top: 10px;
+			font-size: 1.4em;
+			color: #fff;
+			font-weight: 700;
+		}
+	}
+
+	&__base {
+		&-list {
+			height: 300px;
+			overflow-y: scroll;
+		}
+
+		&-line {
+			width: 100%;
+			display: flex;
+			flex-flow: row wrap;
+
+			&.add {
+				margin-bottom: 20px;
+			}
+
+			&.even {
+				background-color: #eee;
+			}
+
+			input {
+				background-color: transparent;
+			}
+		}
+
+		&-input {
+			height: 40px;
+			margin: 5px 0;
+			border: 1px solid $color_grey;
+
+			&_food {
+				flex-basis: 100%;
+			}
+
+			&_cal {
+				//flex-basis: 30%;
+				margin-right: 10px;
+				width: 100px;
+			}
+
+			&_foodready {
+				margin: 0;
+				height: 30px;
+				flex-grow: 1;
+				border: none;
+			}
+
+			&_calready {
+				margin: 0;
+				height: 30px;
+				width: 80px;
+				margin-left: 10px;
+				border: none;
+			}
+		}
+
+		&_button {
+			cursor: pointer;
+			flex-grow: 1;
+			height: 40px;
+			margin-top: 5px;
+
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		float: row nowrap;
+
+		//width: 100%;
+		overflow-x: scroll;
+	}
+
+	&__day {
+		width: 200px;
+		flex-shrink: 0;
+		padding: 10px 10px 10px 15px;
+
+		border: 1px solid $color_grey;
+
+		border-radius: 4px;
+
+		margin-right: 5px;
+
+		color: $color_dgrey;
+		font-size: 0.8em;
+		line-height: 1.6em;
+
+		h3 {
+			margin: 0 0 10px 0;
+			font-weight: 500;
+
+			color: $color_grey;
+		}
+
+		.totalcal {
+			font-size: 1em;
+			font-weight: 700;
+			margin-top: 12px;
+		}
+	}
+}
+
+.gothint {
+	margin-bottom: 10px;
+}
