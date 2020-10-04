@@ -30,13 +30,17 @@
 			display: block;
 			width: 100%;
 			padding: 3px;
-			background-color: rgb(184, 253, 184);
+			background-color: rgb(158, 243, 147);
 			color: #000;
 			font-size: 0.7em;
 		}
 
 		&:hover {
 			background-color: $color_ht;
+		}
+
+		&.complete {
+			background-color: $color_vt;
 		}
 	}
 }
