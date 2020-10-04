@@ -53,7 +53,7 @@
 		cursor: pointer;
 		text-transform: uppercase;
 		height: 65px;
-		flex-basis: 30%;
+		flex-basis: 14%;
 		flex-grow: 1;
 		flex-shrink: 1;
 
@@ -96,6 +96,14 @@
 
 			&:hover {
 				background-color: $color_fd_l;
+			}
+		}
+
+		&_vt {
+			background-color: $color_vt;
+
+			&:hover {
+				background-color: $color_vt_l;
 			}
 		}
 

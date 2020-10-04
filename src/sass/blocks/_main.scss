@@ -105,6 +105,14 @@
 				}
 			}
 
+			&.item-vt {
+				background-color: $color_vt;
+
+				&.inactive {
+					background-color: $color_vt_in;
+				}
+			}
+
 			&.item-ft {
 				background-color: $color_ft;
 
