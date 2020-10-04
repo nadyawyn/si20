@@ -44,6 +44,7 @@
 		}
 
 		&-li {
+			cursor: pointer;
 			display: block;
 
 			border-radius: 100%;
@@ -55,6 +56,10 @@
 			color: $color_grey;
 			font-weight: 700;
 			font-size: 1.3em;
+
+			&:hover {
+				background-color: rgb(189, 255, 192);
+			}
 		}
 	}
 }
