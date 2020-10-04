@@ -96,6 +96,8 @@
 	}
 
 	&__data {
+		border-left: 1px solid $color_grey;
+		padding-left: 10px;
 		height: 320px;
 		overflow-y: scroll;
 	}
@@ -150,7 +152,8 @@
 
 	&__base {
 		&-list {
-			height: 300px;
+			border: 1px solid $color_grey;
+			height: 150px;
 			overflow-y: scroll;
 		}
 
