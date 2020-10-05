@@ -11,6 +11,7 @@
 	&__item {
 		cursor: pointer;
 		display: block;
+		border-radius: 6px;
 		padding: 5px 0;
 		min-height: 70px;
 		margin: 5px;
@@ -22,16 +23,16 @@
 		justify-content: space-around;
 		align-items: center;
 
-		background-color: rgb(165, 165, 165);
+		background-color: rgb(196, 196, 196);
 		color: #ffffff;
 		font-size: 1.3em;
 
 		span {
 			display: block;
 			width: 100%;
-			padding: 3px;
-			background-color: rgb(211, 255, 130);
-			color: #000;
+			padding: 4px;
+			background-color: rgb(221, 255, 158);
+			color: $color_dgrey;
 			font-size: 0.7em;
 		}
 
