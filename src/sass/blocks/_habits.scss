@@ -53,9 +53,12 @@
 			margin: 2px;
 			border: 1px solid $color_grey;
 
-			color: $color_grey;
+			color: $color_dgrey;
 			font-weight: 700;
-			font-size: 1.3em;
+			font-size: 1.1em;
+
+			text-align: center;
+			padding-top: 8px;
 
 			&:hover {
 				background-color: rgb(189, 255, 192);
