@@ -77,6 +77,8 @@
 	&__results {
 		@include reset-list;
 		flex-shrink: 0;
+		width: 24px;
+		margin-right: 2px;
 
 		li {
 			display: block;
@@ -84,7 +86,7 @@
 			height: 24px;
 			border-radius: 2px;
 			margin-bottom: 2px;
-			margin-right: 2px;
+
 
 			&.complete {
 				background-color: $color_res;
@@ -101,7 +103,8 @@
 			display: block;
 			flex-shrink: 0;
 
-			width: 25px;
+			width: 24px;
+			margin-right: 2px;
 			text-align: center;
 
 			color: $color_grey;
