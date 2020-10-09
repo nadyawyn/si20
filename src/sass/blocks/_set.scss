@@ -22,7 +22,46 @@
 				margin-right: 15px;
 			}
 
+			&.vitamin {
+				flex-grow: 1;
+				margin-right: 0;
+				border-right: none;
+
+			}
 
 		}
+
+		&_vt {
+			@include reset-list;
+
+			li {
+				margin: 0 5px;
+				flex-grow: 1;
+
+				display: flex;
+			}
+
+			margin-bottom: 20px;
+		}
 	}
+
+	&__button {
+		&_del {
+			cursor: pointer;
+			margin: 5px 0 0 0;
+			width: 60px;
+			height: 40px;
+			border-radius: 0 4px 4px 0 !important;
+
+			background-color: rgb(241, 75, 75);
+			color: #fff;
+		}
+
+		&_small {
+			cursor: pointer;
+			padding: 15px 5px;
+			border-radius: 100% !important;
+		}
+	}
+
 }

@@ -19,6 +19,10 @@
 		background-color: #fff;
 
 		&-section {
+			&-title {
+				cursor: pointer;
+			}
+
 			flex-shrink: 1;
 			flex-grow: 1;
 			min-width: 200px;
@@ -168,4 +172,9 @@
 		padding: 10px;
 		background-color: #fff;
 	}
+}
+
+.minified {
+	height: 50px;
+	overflow-y: hidden;
 }
