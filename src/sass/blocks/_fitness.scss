@@ -29,4 +29,33 @@
 			}
 		}
 	}
+
+	&__wrapper {
+		&_output {
+			display: flex;
+			flex-flow: row wrap;
+		}
+	}
+
+	&__day {
+		border: 1px solid $color_grey;
+		border-radius: 2px;
+		min-width: 70px;
+		margin: 2px;
+
+		display: flex;
+		flex-flow: column nowrap;
+
+		&_date {
+			color: $color_grey;
+			font-weight: 700;
+			font-size: 0.8rem;
+			text-align: center;
+		}
+
+		&_res {
+			display: flex;
+			justify-content: center;
+		}
+	}
 }
