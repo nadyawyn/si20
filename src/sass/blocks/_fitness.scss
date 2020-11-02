@@ -1,0 +1,32 @@
+.fitness {
+	&__list {
+		@include reset-list;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+
+		&-item {
+			cursor: pointer;
+			width: 60px;
+			height: 60px;
+			border-radius: 4px;
+			flex-grow: 0;
+			flex-shrink: 0;
+
+			margin: 3px;
+
+			background-color: $color_dgrey;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 80%;
+
+			&.complete {
+				background-color: $color_res;
+			}
+
+			&:hover {
+				background-color: $color_ft_l;
+			}
+		}
+	}
+}
