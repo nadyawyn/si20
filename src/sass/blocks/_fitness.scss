@@ -1,4 +1,13 @@
 .fitness {
+	&__overall {
+		border: 1px solid $color_grey;
+		border-radius: 2px;
+		padding: 4px;
+
+		width: 100%;
+		overflow-x: scroll;
+	}
+
 	&__list {
 		@include reset-list;
 		display: flex;
@@ -30,6 +39,15 @@
 		}
 	}
 
+	&__bp-value {
+		background-color: $color_res;
+
+		color: #fff;
+		font-weight: 700;
+		text-align: center;
+		font-size: 0.8em;
+	}
+
 	&__res {
 		&-item {
 			width: 50px;
@@ -53,6 +71,42 @@
 			display: flex;
 			flex-flow: row wrap;
 		}
+
+		display: flex;
+
+		&_out {
+			line-height: 25px;
+			min-width: 120px;
+			border-left: 1px solid $color_grey;
+			padding-right: 10px;
+
+			&.name {
+				font-size: 0.8em;
+				font-weight: 700;
+				color: $color_grey;
+
+				padding-left: 7px;
+
+			}
+		}
+
+		&_date {
+			display: flex;
+			flex-flow: column;
+			min-width: 80px;
+			flex-grow: 0;
+			border-left: none;
+
+			font-size: 0.8em;
+			font-weight: 700;
+			color: $color_grey;
+		}
+
+		&_weight {
+			border: 1px solid $color_grey;
+			border-radius: 2px;
+		}
+
 	}
 
 	&__day {

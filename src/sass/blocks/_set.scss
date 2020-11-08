@@ -1,8 +1,8 @@
 .set {
 	&__list {
 		margin: 0 auto;
-		display: flex;
-		flex-flow: row wrap;
+		// display: flex;
+		// flex-flow: row wrap;
 
 		&-item {
 			height: 40px;
@@ -29,6 +29,11 @@
 
 			}
 
+			&-name {
+				display: inline-block;
+				width: 80px;
+				padding-left: 10px;
+			}
 		}
 
 		&_vt {
